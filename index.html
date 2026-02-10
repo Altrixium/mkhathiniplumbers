@@ -1,0 +1,961 @@
+<!-- ============================
+     Mkhathini Plumbers & Building Construction
+     File: index.html
+     Notes:
+     - Keep your images inside: /assets/
+     - This HTML expects: /css/styles.css and /js/main.js
+     ============================ -->
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#1f6fff" />
+
+  <title>Mkhathini Plumbers & Building Construction | 24/7 Pinetown Plumbers</title>
+  <meta name="description" content="Mkhathini Plumbers & Building Construction (Founded 2012). 24/7 plumbing repairs & installations in Pinetown and nearby areas. Budget-friendly, professional, permanent solutions." />
+
+  <!-- Social sharing -->
+  <meta property="og:title" content="Mkhathini Plumbers & Building Construction | 24/7 Pinetown Plumbers" />
+  <meta property="og:description" content="Timeous, professional and budget-friendly plumbing & maintenance services in Pinetown and nearby areas." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_ZA" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Fredoka:wght@500;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- LocalBusiness structured data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Plumber",
+    "name":"Mkhathini Plumbers and Building Construction",
+    "telephone":"+27 74 686 2188",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"17 Clyde Pl, Farningham Ridge",
+      "addressLocality":"Pinetown",
+      "postalCode":"3610",
+      "addressCountry":"ZA"
+    },
+    "areaServed":"Pinetown and nearby areas",
+    "openingHours":"Mo-Su 00:00-23:59",
+    "foundingDate":"2012",
+    "url":""
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Decorative background layers (styled in CSS) -->
+  <div class="bgPlumbing" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true" id="progressBar"></div>
+
+  <!-- Header -->
+  <header class="siteHeader" id="siteHeader">
+    <div class="nav">
+      <a class="logo" href="#top" aria-label="Go to top">
+        <span class="logoBadge" aria-hidden="true"></span>
+        <span class="logoText">
+          <span class="logoName">Mkhathini</span>
+          <span class="logoSub">Plumbers &amp; Building</span>
+        </span>
+      </a>
+
+      <nav class="menu" aria-label="Primary">
+        <a class="menuLink" href="#services">Services</a>
+        <a class="menuLink" href="#about">About</a>
+        <a class="menuLink" href="#gallery">Projects</a>
+        <a class="menuLink" href="#reviews">Google Reviews</a>
+        <a class="menuLink menuCta" href="#contact">Get Help</a>
+      </nav>
+
+      <button class="burger" id="burger" type="button" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
+        <span class="burgerLines" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobileMenu" id="mobileMenu" aria-hidden="true">
+      <div class="mobileMenuInner">
+        <a class="mobileLink" href="#services">Services</a>
+        <a class="mobileLink" href="#about">About</a>
+        <a class="mobileLink" href="#gallery">Projects</a>
+        <a class="mobileLink" href="#reviews">Google Reviews</a>
+        <a class="mobileLink mobileCta" href="#contact">Contact</a>
+
+        <div class="mobileMeta">
+          <div class="mobileMetaRow">
+            <span class="metaLabel">24/7:</span>
+            <a class="metaValue" href="tel:+27746862188">074 686 2188</a>
+          </div>
+          <div class="mobileMetaRow">
+            <span class="metaLabel">Area:</span>
+            <span class="metaValue">Pinetown &amp; nearby areas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ============================
+         SECTION 1/6 — HERO (Carousel)
+         ============================ -->
+    <section class="hero" aria-label="Hero">
+      <div class="container heroGrid">
+        <div class="heroCopy">
+          <div class="pillRow">
+            <span class="pill">Open 24 Hours</span>
+            <span class="pill pillAlt">Pinetown &amp; Nearby Areas</span>
+            <span class="pill pillStar" title="Google rating">
+              <span aria-hidden="true">★</span>
+              <span class="pillStarText">4.8</span>
+              <span class="pillStarSmall">/ 8 reviews</span>
+            </span>
+          </div>
+
+          <h1 class="heroTitle">
+            Permanent plumbing solutions,
+            <span class="heroTitleAccent">done right</span> — 24/7.
+          </h1>
+
+          <p class="heroLead">
+            Founded in 2012, Mkhathini Plumbers and Building Construction is a black owned company
+            providing timeous, professional and budget-friendly services — from urgent repairs to neat installations.
+          </p>
+
+          <div class="heroActions">
+            <a class="btn btnPrimary" href="tel:+27746862188">
+              <span class="btnIcon" aria-hidden="true">☎</span>
+              Call 074 686 2188
+            </a>
+            <a class="btn btnGhost" href="#contact">
+              <span class="btnIcon" aria-hidden="true">✉</span>
+              Request a Quote
+            </a>
+          </div>
+
+          <div class="trustStrip" aria-label="Highlights">
+            <div class="trustItem">
+              <div class="trustIcon" aria-hidden="true">⏱</div>
+              <div class="trustText">
+                <div class="trustTitle">Fast Response</div>
+                <div class="trustSub">Local to Pinetown</div>
+              </div>
+            </div>
+            <div class="trustItem">
+              <div class="trustIcon" aria-hidden="true">🛠</div>
+              <div class="trustText">
+                <div class="trustTitle">Repairs &amp; Installations</div>
+                <div class="trustSub">Plumbing + building</div>
+              </div>
+            </div>
+            <div class="trustItem">
+              <div class="trustIcon" aria-hidden="true">✅</div>
+              <div class="trustText">
+                <div class="trustTitle">Clean Workmanship</div>
+                <div class="trustSub">Neat finishes</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel -->
+        <div class="heroMedia" aria-label="Project carousel">
+          <div class="carousel" id="heroCarousel">
+            <div class="carouselViewport" id="carouselViewport">
+              <article class="carouselSlide isActive" data-index="0">
+                <img src="assets/2021-11-05.jpg" alt="Modern bathroom with freestanding tub and shower" loading="eager" />
+                <div class="slideBadge">
+                  <div class="slideBadgeTitle">Bathroom Upgrade</div>
+                  <div class="slideBadgeSub">Finishes that last</div>
+                </div>
+              </article>
+
+              <article class="carouselSlide" data-index="1">
+                <img src="assets/BATHROOM DONE.JPG" alt="Bathroom completed with shower and basin" loading="lazy" />
+                <div class="slideBadge">
+                  <div class="slideBadgeTitle">Full Bathroom Completion</div>
+                  <div class="slideBadgeSub">From rough-in to final</div>
+                </div>
+              </article>
+
+              <article class="carouselSlide" data-index="2">
+                <img src="assets/COPPER PIPEWORK1.JPG" alt="Copper pipework installation on exterior wall" loading="lazy" />
+                <div class="slideBadge">
+                  <div class="slideBadgeTitle">Pipework &amp; Routing</div>
+                  <div class="slideBadgeSub">Neat, professional lines</div>
+                </div>
+              </article>
+
+              <article class="carouselSlide" data-index="3">
+                <img src="assets/JOJO TANK INSTALLATION.png" alt="New 2500L JoJo tank and pump installation" loading="lazy" />
+                <div class="slideBadge">
+                  <div class="slideBadgeTitle">JoJo Tank + Pump</div>
+                  <div class="slideBadgeSub">Water security setup</div>
+                </div>
+              </article>
+
+              <article class="carouselSlide" data-index="4">
+                <img src="assets/NEW SHOWER INSTALLATION.png" alt="Before and after shower installation" loading="lazy" />
+                <div class="slideBadge">
+                  <div class="slideBadgeTitle">Shower Installation</div>
+                  <div class="slideBadgeSub">Before → After transformation</div>
+                </div>
+              </article>
+
+              <article class="carouselSlide" data-index="5">
+                <img src="assets/NEW STUDIO BATHROOM.JPG" alt="Studio bathroom with corner shower and vanity" loading="lazy" />
+                <div class="slideBadge">
+                  <div class="slideBadgeTitle">Studio Bathroom</div>
+                  <div class="slideBadgeSub">Smart use of space</div>
+                </div>
+              </article>
+            </div>
+
+            <button class="carouselBtn prev" type="button" aria-label="Previous slide" id="carouselPrev">
+              <span aria-hidden="true">‹</span>
+            </button>
+            <button class="carouselBtn next" type="button" aria-label="Next slide" id="carouselNext">
+              <span aria-hidden="true">›</span>
+            </button>
+
+            <div class="carouselDots" role="tablist" aria-label="Carousel pagination" id="carouselDots">
+              <button class="dot isActive" type="button" aria-label="Go to slide 1" data-go="0"></button>
+              <button class="dot" type="button" aria-label="Go to slide 2" data-go="1"></button>
+              <button class="dot" type="button" aria-label="Go to slide 3" data-go="2"></button>
+              <button class="dot" type="button" aria-label="Go to slide 4" data-go="3"></button>
+              <button class="dot" type="button" aria-label="Go to slide 5" data-go="4"></button>
+              <button class="dot" type="button" aria-label="Go to slide 6" data-go="5"></button>
+            </div>
+
+            <div class="carouselBar" aria-hidden="true">
+              <div class="carouselBarFill" id="carouselBarFill"></div>
+            </div>
+          </div>
+
+          <div class="heroQuickCard" aria-label="Quick contact card">
+            <div class="quickRow">
+              <div class="quickKicker">Emergency?</div>
+              <a class="quickPhone" href="tel:+27746862188">074 686 2188</a>
+            </div>
+            <div class="quickGrid">
+              <div class="quickCell">
+                <div class="quickLabel">Hours</div>
+                <div class="quickValue">Open 24 hours</div>
+              </div>
+              <div class="quickCell">
+                <div class="quickLabel">Service area</div>
+                <div class="quickValue">Pinetown &amp; nearby areas</div>
+              </div>
+              <div class="quickCell">
+                <div class="quickLabel">Address</div>
+                <div class="quickValue">17 Clyde Pl, Farningham Ridge, Pinetown, 3610</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Decorative “pipe” separators -->
+      <div class="pipeDivider" aria-hidden="true">
+        <div class="pipeLine"></div>
+        <div class="pipeNode"></div>
+        <div class="pipeLine"></div>
+      </div>
+    </section>
+
+    <!-- ============================
+         SECTION 2/6 — SERVICES
+         ============================ -->
+    <section class="section" id="services" aria-label="Services">
+      <div class="container">
+        <div class="sectionHead">
+          <div class="sectionKicker">What we do</div>
+          <h2 class="sectionTitle">Plumbing + building services that keep things running</h2>
+          <p class="sectionLead">A one-stop shop for quality &amp; reliable building and maintenance services, with permanent solutions for plumbing problems — repairs or installations.</p>
+        </div>
+
+        <div class="serviceGrid">
+          <article class="serviceCard">
+            <div class="serviceTop">
+              <div class="serviceIcon" aria-hidden="true">🚰</div>
+              <h3 class="serviceTitle">Leak Detection &amp; Repairs</h3>
+            </div>
+            <p class="serviceText">Stop damage early: isolate, diagnose, repair, and pressure-check for peace of mind.</p>
+            <ul class="serviceList">
+              <li>Tap / mixer leaks</li>
+              <li>Hidden pipe leaks</li>
+              <li>Toilet running / leaking</li>
+            </ul>
+          </article>
+
+          <article class="serviceCard">
+            <div class="serviceTop">
+              <div class="serviceIcon" aria-hidden="true">🧼</div>
+              <h3 class="serviceTitle">Bathroom Renovations</h3>
+            </div>
+            <p class="serviceText">From rough-in plumbing to final fittings — neat finishes, smart layouts, durable materials.</p>
+            <ul class="serviceList">
+              <li>Showers &amp; baths</li>
+              <li>Basins &amp; vanities</li>
+              <li>Full refurbs</li>
+            </ul>
+          </article>
+
+          <article class="serviceCard">
+            <div class="serviceTop">
+              <div class="serviceIcon" aria-hidden="true">🧰</div>
+              <h3 class="serviceTitle">Installations &amp; Upgrades</h3>
+            </div>
+            <p class="serviceText">New fixtures, new lines, better flow. We install with clean routing and proper support.</p>
+            <ul class="serviceList">
+              <li>Geyser connections</li>
+              <li>New pipe runs</li>
+              <li>Kitchen / laundry points</li>
+            </ul>
+          </article>
+
+          <article class="serviceCard">
+            <div class="serviceTop">
+              <div class="serviceIcon" aria-hidden="true">💧</div>
+              <h3 class="serviceTitle">JoJo Tanks &amp; Pumps</h3>
+            </div>
+            <p class="serviceText">Water storage and pressure solutions set up safely and tidily — for dependable supply.</p>
+            <ul class="serviceList">
+              <li>Tank installation</li>
+              <li>Pump setup</li>
+              <li>Routing &amp; valves</li>
+            </ul>
+          </article>
+
+          <article class="serviceCard">
+            <div class="serviceTop">
+              <div class="serviceIcon" aria-hidden="true">🧱</div>
+              <h3 class="serviceTitle">Building &amp; Maintenance</h3>
+            </div>
+            <p class="serviceText">General building support tied to plumbing projects — patching, finishes, and small builds.</p>
+            <ul class="serviceList">
+              <li>Repairs &amp; touch-ups</li>
+              <li>General maintenance</li>
+              <li>Project support</li>
+            </ul>
+          </article>
+
+          <article class="serviceCard serviceCardAlt">
+            <div class="serviceTop">
+              <div class="serviceIcon" aria-hidden="true">⚡</div>
+              <h3 class="serviceTitle">24/7 Callouts</h3>
+            </div>
+            <p class="serviceText">Burst pipe, no water, urgent leak — we prioritize emergencies to reduce damage.</p>
+            <div class="serviceCtaRow">
+              <a class="miniBtn" href="tel:+27746862188">Call now</a>
+              <a class="miniBtn miniBtnGhost" href="#contact">Send details</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+         SECTION 3/6 — ABOUT
+         ============================ -->
+    <section class="section sectionAlt" id="about" aria-label="About">
+      <div class="container">
+        <div class="aboutGrid">
+          <div class="aboutCard">
+            <div class="sectionKicker">About the company</div>
+            <h2 class="sectionTitle">Founded in 2012 — built on professional, budget-friendly service</h2>
+            <p class="sectionLead">
+              Mkhathini Plumbers and Building Construction is a black owned company which prides itself in
+              providing timeous, professional and budget-friendly services to clients.
+            </p>
+
+            <div class="aboutBullets">
+              <div class="aboutBullet">
+                <div class="aboutDot" aria-hidden="true"></div>
+                <div class="aboutBulletText">
+                  <strong>Permanent solutions:</strong> not quick fixes — we aim for reliable, long-term results.
+                </div>
+              </div>
+              <div class="aboutBullet">
+                <div class="aboutDot" aria-hidden="true"></div>
+                <div class="aboutBulletText">
+                  <strong>Neat workmanship:</strong> tidy routes, clean finishes, clear communication.
+                </div>
+              </div>
+              <div class="aboutBullet">
+                <div class="aboutDot" aria-hidden="true"></div>
+                <div class="aboutBulletText">
+                  <strong>One-stop shop:</strong> plumbing + building maintenance support to complete the job.
+                </div>
+              </div>
+            </div>
+
+            <div class="aboutStats" aria-label="Company stats">
+              <div class="stat">
+                <div class="statNumber">2012</div>
+                <div class="statLabel">Founded</div>
+              </div>
+              <div class="stat">
+                <div class="statNumber">24/7</div>
+                <div class="statLabel">Callouts</div>
+              </div>
+              <div class="stat">
+                <div class="statNumber">4.8★</div>
+                <div class="statLabel">Google rating</div>
+              </div>
+            </div>
+
+            <div class="aboutActions">
+              <a class="btn btnPrimary" href="#contact">Get a quote</a>
+              <a class="btn btnGhost" href="tel:+27746862188">Speak to us</a>
+            </div>
+          </div>
+
+          <div class="aboutMedia">
+            <div class="aboutMediaFrame">
+              <img src="assets/HAND BASIN.JPG" alt="Wall-mounted tap and basin installation" loading="lazy" />
+              <div class="aboutMediaTag">Quality finishes</div>
+            </div>
+            <div class="aboutMediaFrame aboutMediaFrameSmall">
+              <img src="assets/HIS&HERS BASIN.jpg" alt="His and hers basins with vanity" loading="lazy" />
+              <div class="aboutMediaTag">Smart layouts</div>
+            </div>
+            <div class="aboutMediaFrame aboutMediaFrameWide">
+              <img src="assets/IMG_20190729_132713.jpg" alt="Freestanding bath near large windows" loading="lazy" />
+              <div class="aboutMediaTag">Premium look</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+         SECTION 4/6 — GALLERY (All images + filters)
+         Filters requested: all, inside, bathroom, pipe, by owner, street view
+         ============================ -->
+    <section class="section" id="gallery" aria-label="Projects gallery">
+      <div class="container">
+        <div class="sectionHead">
+          <div class="sectionKicker">Project proof</div>
+          <h2 class="sectionTitle">Work gallery</h2>
+          <p class="sectionLead">Browse our real projects. Use the filters to jump to the type of work you need.</p>
+        </div>
+
+        <div class="filterBar" role="toolbar" aria-label="Gallery filters">
+          <button class="filterBtn isActive" type="button" data-filter="all">All</button>
+          <button class="filterBtn" type="button" data-filter="inside">Inside</button>
+          <button class="filterBtn" type="button" data-filter="bathroom">Bathroom</button>
+          <button class="filterBtn" type="button" data-filter="pipe">Pipe</button>
+          <button class="filterBtn" type="button" data-filter="by-owner">By owner</button>
+          <button class="filterBtn" type="button" data-filter="street-view">Street view</button>
+        </div>
+
+        <!-- “All images available in assets folder” (based on what you provided) -->
+        <div class="galleryGrid" id="galleryGrid">
+          <figure class="galleryItem" data-category="inside bathroom by-owner">
+            <button class="galleryThumb" type="button" data-lightbox="assets/2021-11-05.jpg" aria-label="Open image: Modern bathroom with tub and shower">
+              <img src="assets/2021-11-05.jpg" alt="Modern bathroom with freestanding tub and shower" loading="lazy" />
+            </button>
+            <figcaption class="galleryCap">
+              <span class="capTitle">Bathroom finishing</span>
+              <span class="capTags">Inside • Bathroom</span>
+            </figcaption>
+          </figure>
+
+          <figure class="galleryItem" data-category="inside bathroom by-owner">
+            <button class="galleryThumb" type="button" data-lightbox="assets/BATHROOM DONE.JPG" aria-label="Open image: Bathroom completed">
+              <img src="assets/BATHROOM DONE.JPG" alt="Bathroom completed with shower and basin" loading="lazy" />
+            </button>
+            <figcaption class="galleryCap">
+              <span class="capTitle">Bathroom done</span>
+              <span class="capTags">Inside • Bathroom</span>
+            </figcaption>
+          </figure>
+
+          <figure class="galleryItem" data-category="pipe street-view by-owner">
+            <button class="galleryThumb" type="button" data-lightbox="assets/COPPER PIPEWORK1.JPG" aria-label="Open image: Copper pipework">
+              <img src="assets/COPPER PIPEWORK1.JPG" alt="Copper pipework installation on exterior wall" loading="lazy" />
+            </button>
+            <figcaption class="galleryCap">
+              <span class="capTitle">Copper pipework</span>
+              <span class="capTags">Pipe • Street view</span>
+            </figcaption>
+          </figure>
+
+          <figure class="galleryItem" data-category="inside bathroom by-owner">
+            <button class="galleryThumb" type="button" data-lightbox="assets/HAND BASIN.JPG" aria-label="Open image: Hand basin installation">
+              <img src="assets/HAND BASIN.JPG" alt="Hand basin installation with wall-mounted tap" loading="lazy" />
+            </button>
+            <figcaption class="galleryCap">
+              <span class="capTitle">Hand basin</span>
+              <span class="capTags">Inside • Bathroom</span>
+            </figcaption>
+          </figure>
+
+          <figure class="galleryItem" data-category="inside bathroom by-owner">
+            <button class="galleryThumb" type="button" data-lightbox="assets/HIS&HERS BASIN.jpg" aria-label="Open image: His and hers basins">
+              <img src="assets/HIS&HERS BASIN.jpg" alt="His and hers basins on vanity" loading="lazy" />
+            </button>
+            <figcaption class="galleryCap">
+              <span class="capTitle">His &amp; hers basins</span>
+              <span class="capTags">Inside • Bathroom</span>
+            </figcaption>
+          </figure>
+
+          <figure class="galleryItem" data-category="inside bathroom by-owner">
+            <button class="galleryThumb" type="button" data-lightbox="assets/IMG_20190729_132713.jpg" aria-label="Open image: Freestanding bath near windows">
+              <img src="assets/IMG_20190729_132713.jpg" alt="Freestanding bath near large windows" loading="lazy" />
+            </button>
+            <figcaption class="galleryCap">
+              <span class="capTitle">Freestanding bath</span>
+              <span class="capTags">Inside • Bathroom</span>
+            </figcaption>
+          </figure>
+
+          <figure class="galleryItem" data-category="pipe street-view by-owner">
+            <button class="galleryThumb" type="button" data-lightbox="assets/JOJO TANK INSTALLATION.png" aria-label="Open image: JoJo tank and pump installation">
+              <img src="assets/JOJO TANK INSTALLATION.png" alt="New 2500L JoJo tank and pump installation" loading="lazy" />
+            </button>
+            <figcaption class="galleryCap">
+              <span class="capTitle">JoJo tank + pump</span>
+              <span class="capTags">Pipe • Street view</span>
+            </figcaption>
+          </figure>
+
+          <figure class="galleryItem" data-category="inside bathroom by-owner">
+            <button class="galleryThumb" type="button" data-lightbox="assets/NEW SHOWER INSTALLATION.png" aria-label="Open image: New shower installation">
+              <img src="assets/NEW SHOWER INSTALLATION.png" alt="Before and after shower installation montage" loading="lazy" />
+            </button>
+            <figcaption class="galleryCap">
+              <span class="capTitle">New shower install</span>
+              <span class="capTags">Inside • Bathroom</span>
+            </figcaption>
+          </figure>
+
+          <figure class="galleryItem" data-category="inside bathroom by-owner">
+            <button class="galleryThumb" type="button" data-lightbox="assets/NEW STUDIO BATHROOM.JPG" aria-label="Open image: New studio bathroom">
+              <img src="assets/NEW STUDIO BATHROOM.JPG" alt="Studio bathroom with corner shower and vanity" loading="lazy" />
+            </button>
+            <figcaption class="galleryCap">
+              <span class="capTitle">Studio bathroom</span>
+              <span class="capTags">Inside • Bathroom</span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- Lightbox (JS will manage) -->
+        <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
+          <div class="lightboxInner" role="document">
+            <button class="lightboxClose" type="button" id="lightboxClose" aria-label="Close viewer">×</button>
+            <img class="lightboxImg" id="lightboxImg" alt="" />
+            <div class="lightboxHint">Tip: Use ← → keys to browse</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+         SECTION 5/6 — GOOGLE REVIEWS (Beast mode)
+         ============================ -->
+    <section class="section sectionAlt" id="reviews" aria-label="Google reviews">
+      <div class="container">
+        <div class="reviewsHeader">
+          <div class="reviewsLeft">
+            <div class="sectionKicker">Reputation</div>
+            <h2 class="sectionTitle">Google reviews</h2>
+            <p class="sectionLead">
+              Real feedback from customers.
+            </p>
+          </div>
+
+          <div class="reviewsRight" aria-label="Review summary">
+            <div class="reviewScoreCard">
+              <div class="scoreTop">
+                <div class="scoreNumber">4.8</div>
+                <div class="scoreMeta">
+                  <div class="stars" aria-label="4.8 out of 5 stars">
+                    <span aria-hidden="true">★★★★★</span>
+                  </div>
+                  <div class="scoreSmall">Based on 8 reviews</div>
+                </div>
+              </div>
+
+              <div class="scoreBars" aria-label="Rating distribution">
+                <div class="barRow">
+                  <span class="barLabel">5</span>
+                  <span class="barTrack"><span class="barFill" style="width:80%"></span></span>
+                  <span class="barPct">80%</span>
+                </div>
+                <div class="barRow">
+                  <span class="barLabel">4</span>
+                  <span class="barTrack"><span class="barFill" style="width:15%"></span></span>
+                  <span class="barPct">15%</span>
+                </div>
+                <div class="barRow">
+                  <span class="barLabel">3</span>
+                  <span class="barTrack"><span class="barFill" style="width:5%"></span></span>
+                  <span class="barPct">5%</span>
+                </div>
+                <div class="barRow">
+                  <span class="barLabel">2</span>
+                  <span class="barTrack"><span class="barFill" style="width:0%"></span></span>
+                  <span class="barPct">0%</span>
+                </div>
+                <div class="barRow">
+                  <span class="barLabel">1</span>
+                  <span class="barTrack"><span class="barFill" style="width:0%"></span></span>
+                  <span class="barPct">0%</span>
+                </div>
+              </div>
+
+              <div class="reviewCtas">
+                <a class="btn btnPrimary" href="#contact">Book a plumber</a>
+                <a class="btn btnGhost" href="#" aria-disabled="true">Leave a review</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review cards slider (JS will enable horizontal drag + arrows) -->
+        <div class="reviewRailWrap" aria-label="Review highlights">
+          <button class="railBtn railPrev" type="button" id="reviewPrev" aria-label="Previous reviews">‹</button>
+
+          <div class="reviewRail" id="reviewRail" tabindex="0" aria-label="Scrollable reviews">
+            <article class="reviewCard">
+              <header class="reviewCardHead">
+                <div class="avatar" aria-hidden="true">T</div>
+                <div class="who">
+                  <div class="whoName">Thabiso Mlaba</div>
+                  <div class="whoMeta">1 review</div>
+                </div>
+                <div class="whoStars" aria-hidden="true">★★★★★</div>
+              </header>
+              <p class="reviewText">
+                Mkhathini Plumbers always show up after just one call, no hassles and the work is done on time. and Muzi is always professional.
+                Thank you. Owner response: Hi Thabiso, thank you so much for the positive feedback. Please do call us again!
+              </p>
+              <footer class="reviewFoot">
+                <span class="reviewTag">Google review</span>
+                <span class="reviewTime">4 years ago</span>
+              </footer>
+            </article>
+
+            <article class="reviewCard">
+              <header class="reviewCardHead">
+                <div class="avatar" aria-hidden="true">K</div>
+                <div class="who">
+                  <div class="whoName">Kgomotso Mweli</div>
+                  <div class="whoMeta">1 review</div>
+                </div>
+                <div class="whoStars" aria-hidden="true">★★★★★</div>
+              </header>
+              <p class="reviewText">
+                Thank you for a professional and timely service. Positive: …More. Owner response: Thank you so much for taking the time to rate our
+                services, and for the great feedback. Please do Call us again.
+              </p>
+              <footer class="reviewFoot">
+                <span class="reviewTag">Google review</span>
+                <span class="reviewTime">4 years ago</span>
+              </footer>
+            </article>
+
+            <article class="reviewCard">
+              <header class="reviewCardHead">
+                <div class="avatar" aria-hidden="true">N</div>
+                <div class="who">
+                  <div class="whoName">Nonkululeko Madela</div>
+                  <div class="whoMeta">1 review</div>
+                </div>
+                <div class="whoStars" aria-hidden="true">★★★★★</div>
+              </header>
+              <p class="reviewText">Good</p>
+              <footer class="reviewFoot">
+                <span class="reviewTag">Google review</span>
+                <span class="reviewTime">3 years ago</span>
+              </footer>
+            </article>
+
+            <article class="reviewCard">
+              <header class="reviewCardHead">
+                <div class="avatar" aria-hidden="true">Z</div>
+                <div class="who">
+                  <div class="whoName">Zethu Mazibuko</div>
+                  <div class="whoMeta">3 reviews</div>
+                </div>
+                <div class="whoStars" aria-hidden="true">★★★★★</div>
+              </header>
+              <p class="reviewText">Positive: …More</p>
+              <footer class="reviewFoot">
+                <span class="reviewTag">Google review</span>
+                <span class="reviewTime">Edited 6 months ago</span>
+              </footer>
+            </article>
+
+            <article class="reviewCard">
+              <header class="reviewCardHead">
+                <div class="avatar" aria-hidden="true">A</div>
+                <div class="who">
+                  <div class="whoName">Ayanda Zondi</div>
+                  <div class="whoMeta">1 review · 1 photo</div>
+                </div>
+                <div class="whoStars" aria-hidden="true">★★★★★</div>
+              </header>
+              <p class="reviewText">
+                Positive: Services: …More. Owner response: Thank you for taking your time and rate us.
+              </p>
+              <footer class="reviewFoot">
+                <span class="reviewTag">Google review</span>
+                <span class="reviewTime">4 years ago</span>
+              </footer>
+            </article>
+
+            <article class="reviewCard">
+              <header class="reviewCardHead">
+                <div class="avatar" aria-hidden="true">N</div>
+                <div class="who">
+                  <div class="whoName">nothando gcwensa</div>
+                  <div class="whoMeta">Google review</div>
+                </div>
+                <div class="whoStars" aria-hidden="true">★★★★★</div>
+              </header>
+              <p class="reviewText">
+                Positive: Services: …More. Owner response: “Thank you so much for taking the time to leave us a rating." Please do call us again.
+              </p>
+              <footer class="reviewFoot">
+                <span class="reviewTag">Google review</span>
+                <span class="reviewTime">4 years ago</span>
+              </footer>
+            </article>
+
+            <article class="reviewCard">
+              <header class="reviewCardHead">
+                <div class="avatar" aria-hidden="true">L</div>
+                <div class="who">
+                  <div class="whoName">Lwazi Mbili</div>
+                  <div class="whoMeta">Google review</div>
+                </div>
+                <div class="whoStars" aria-hidden="true">★★★★★</div>
+              </header>
+              <p class="reviewText">No written comment.</p>
+              <footer class="reviewFoot">
+                <span class="reviewTag">Google review</span>
+                <span class="reviewTime">a year ago</span>
+              </footer>
+            </article>
+
+            <article class="reviewCard">
+              <header class="reviewCardHead">
+                <div class="avatar" aria-hidden="true">N</div>
+                <div class="who">
+                  <div class="whoName">Njabulo Ian</div>
+                  <div class="whoMeta">Google review</div>
+                </div>
+                <div class="whoStars" aria-hidden="true">★★★★★</div>
+              </header>
+              <p class="reviewText">No written comment.</p>
+              <footer class="reviewFoot">
+                <span class="reviewTag">Google review</span>
+                <span class="reviewTime">3 years ago</span>
+              </footer>
+            </article>
+          </div>
+
+          <button class="railBtn railNext" type="button" id="reviewNext" aria-label="Next reviews">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+         SECTION 6/6 — CONTACT (Important)
+         ============================ -->
+    <section class="section contact" id="contact" aria-label="Contact">
+      <div class="container">
+        <div class="sectionHead">
+          <div class="sectionKicker">Get help now</div>
+          <h2 class="sectionTitle">Contact Mkhathini</h2>
+          <p class="sectionLead">Send details for a quote, or call us for urgent plumbing assistance — open 24 hours.</p>
+        </div>
+
+        <div class="contactGrid">
+          <div class="contactCard">
+            <div class="contactTop">
+              <div class="contactBadge" aria-hidden="true">24/7</div>
+              <h3 class="contactTitle">Call or message</h3>
+              <p class="contactText">We serve Pinetown and nearby areas. For emergencies, calling is fastest.</p>
+            </div>
+
+            <div class="contactRows">
+              <div class="contactRow">
+                <div class="contactLabel">Phone</div>
+                <div class="contactValue">
+                  <a href="tel:+27746862188">074 686 2188</a>
+                </div>
+              </div>
+
+              <div class="contactRow">
+                <div class="contactLabel">Address</div>
+                <div class="contactValue">17 Clyde Pl, Farningham Ridge, Pinetown, 3610</div>
+              </div>
+
+              <div class="contactRow">
+                <div class="contactLabel">Hours</div>
+                <div class="contactValue">Open 24 hours</div>
+              </div>
+
+              <div class="contactRow">
+                <div class="contactLabel">Areas served</div>
+                <div class="contactValue">Pinetown and nearby areas</div>
+              </div>
+            </div>
+
+            <div class="contactActions">
+              <a class="btn btnPrimary" href="tel:+27746862188">Call now</a>
+              <a class="btn btnGhost" href="#contactForm">Send a request</a>
+            </div>
+
+            <div class="contactMiniNote">
+              <strong>Tip:</strong> Include your suburb, issue type, and a photo if possible.
+            </div>
+          </div>
+
+          <div class="formCard" id="contactForm">
+            <h3 class="formTitle">Request a quote</h3>
+            <p class="formLead">Fill this in and we’ll get back to you. (JS can later wire this to email/WhatsApp.)</p>
+
+            <form class="form" id="quoteForm" action="#" method="post" novalidate>
+              <div class="formRow">
+                <label class="field">
+                  <span class="fieldLabel">Full name</span>
+                  <input class="fieldInput" name="name" type="text" placeholder="Your name" autocomplete="name" required />
+                </label>
+
+                <label class="field">
+                  <span class="fieldLabel">Phone</span>
+                  <input class="fieldInput" name="phone" type="tel" placeholder="e.g. 074 686 2188" autocomplete="tel" required />
+                </label>
+              </div>
+
+              <div class="formRow">
+                <label class="field">
+                  <span class="fieldLabel">Area / Suburb</span>
+                  <input class="fieldInput" name="area" type="text" placeholder="e.g. Pinetown" required />
+                </label>
+
+                <label class="field">
+                  <span class="fieldLabel">Service type</span>
+                  <select class="fieldInput" name="service" required>
+                    <option value="" selected disabled>Select a service</option>
+                    <option value="leak-repair">Leak repair</option>
+                    <option value="bathroom-renovation">Bathroom renovation</option>
+                    <option value="installation">Installation / upgrade</option>
+                    <option value="jojo-tank">JoJo tank / pump</option>
+                    <option value="maintenance">Building / maintenance</option>
+                    <option value="emergency">Emergency callout</option>
+                  </select>
+                </label>
+              </div>
+
+              <label class="field">
+                <span class="fieldLabel">Describe the issue</span>
+                <textarea class="fieldInput fieldTextarea" name="message" rows="5" placeholder="Tell us what's happening, when it started, and what you’ve tried." required></textarea>
+              </label>
+
+              <div class="formFoot">
+                <button class="btn btnPrimary" type="submit">Send request</button>
+                <button class="btn btnGhost" type="button" id="copyPhoneBtn" data-copy="+27746862188">Copy phone</button>
+              </div>
+
+              <p class="formFinePrint">
+                By sending, you agree we may contact you by phone or WhatsApp to confirm details.
+              </p>
+
+              <div class="formToast" id="formToast" aria-live="polite" aria-atomic="true"></div>
+            </form>
+          </div>
+
+          <div class="mapCard" aria-label="Map">
+            <div class="mapTop">
+              <h3 class="mapTitle">Find us</h3>
+              <p class="mapLead">17 Clyde Pl, Farningham Ridge, Pinetown, 3610</p>
+            </div>
+
+            <!-- Replace src with your actual Google Maps embed when ready -->
+            <div class="mapFrame">
+              <iframe
+                title="Map to Mkhathini Plumbers and Building Construction"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=17%20Clyde%20Pl%2C%20Farningham%20Ridge%2C%20Pinetown%2C%203610&output=embed">
+              </iframe>
+            </div>
+
+            <div class="mapFoot">
+              <a class="miniBtn" href="https://www.google.com/maps?q=17%20Clyde%20Pl%2C%20Farningham%20Ridge%2C%20Pinetown%2C%203610" target="_blank" rel="noopener">Open in Maps</a>
+              <a class="miniBtn miniBtnGhost" href="tel:+27746862188">Call</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer (not a section) -->
+    <footer class="footer" aria-label="Footer">
+      <div class="container footerGrid">
+        <div class="footerBrand">
+          <div class="footerLogo">
+            <span class="logoBadge" aria-hidden="true"></span>
+            <div>
+              <div class="footerName">Mkhathini Plumbers &amp; Building Construction</div>
+              <div class="footerSub">Pinetown • Open 24 Hours • 074 686 2188</div>
+            </div>
+          </div>
+          <p class="footerNote">
+            Permanent solutions to any plumbing situation — repairs or installations — plus building and maintenance support.
+          </p>
+        </div>
+
+        <div class="footerLinks" aria-label="Footer links">
+          <a class="footerLink" href="#services">Services</a>
+          <a class="footerLink" href="#about">About</a>
+          <a class="footerLink" href="#gallery">Projects</a>
+          <a class="footerLink" href="#reviews">Reviews</a>
+          <a class="footerLink" href="#contact">Contact</a>
+        </div>
+
+        <div class="footerMeta">
+          <div class="footerMetaRow">
+            <span class="metaLabel">Address:</span>
+            <span class="metaValue">17 Clyde Pl, Farningham Ridge, Pinetown, 3610</span>
+          </div>
+          <div class="footerMetaRow">
+            <span class="metaLabel">Phone:</span>
+            <a class="metaValue" href="tel:+27746862188">074 686 2188</a>
+          </div>
+          <div class="footerMetaRow">
+            <span class="metaLabel">Hours:</span>
+            <span class="metaValue">Open 24 hours</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footerBottom">
+        <span>© <span id="year"></span> Mkhathini Plumbers and Building Construction</span>
+        <span class="footerSep" aria-hidden="true">•</span>
+        <a href="#top" class="backTop">Back to top</a>
+      </div>
+    </footer>
+  </main>
+
+  <!-- JS -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
