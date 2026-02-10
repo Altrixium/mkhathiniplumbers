@@ -41,41 +41,15 @@
   window.addEventListener("scroll", updateProgressBar, { passive: true });
   window.addEventListener("resize", updateProgressBar);
 
-  // ---------- Header show/hide on scroll (gentle) ----------
-  let lastY = window.scrollY;
-  let headerHidden = false;
+  // ---------- Header (always visible) ----------
+  if (header) header.style.transform = "translateY(0)";
 
-  function updateHeaderBehavior() {
-    if (!header) return;
-
-    const y = window.scrollY;
-    const delta = y - lastY;
-
-    // Don't hide near top
-    if (y < 120) {
-      header.style.transform = "translateY(0)";
-      headerHidden = false;
-      lastY = y;
-      return;
-    }
-
-    // Only react to meaningful scroll
-    if (Math.abs(delta) < 12) {
-      lastY = y;
-      return;
-    }
-
-    if (delta > 0 && !headerHidden) {
-      header.style.transform = "translateY(-110%)";
-      headerHidden = true;
-    } else if (delta < 0 && headerHidden) {
-      header.style.transform = "translateY(0)";
-      headerHidden = false;
-    }
-
-    lastY = y;
+  // ---------- Prevent mobile load from jumping to contact ----------
+  const isMobile = window.matchMedia("(max-width: 820px)").matches;
+  if (isMobile && (window.location.hash === "#contact" || window.location.hash === "#contactForm")) {
+    history.replaceState(null, "", window.location.pathname + window.location.search);
+    window.scrollTo({ top: 0, behavior: "auto" });
   }
-  window.addEventListener("scroll", updateHeaderBehavior, { passive: true });
 
   // ---------- Mobile menu ----------
   const burger = $("#burger");

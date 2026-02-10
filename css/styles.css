@@ -177,6 +177,8 @@ button,input,select,textarea{font:inherit}
   background: rgba(242,251,255,.92);
   backdrop-filter: blur(10px);
 }
+.mobileMenu[aria-hidden="true"]{display:none}
+.mobileMenu[aria-hidden="false"]{display:block}
 .mobileMenuInner{
   max-width:var(--max);
   margin: 0 auto;
